@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login page</title>
+<!-- <link rel="stylesheet" type="text/css" href="css/login.css"> -->
+<!-- <link rel="stylesheet" type="text/css" href="css/homepage.css"> -->
+<style>
+    body
+{
+margin: 0;
+padding: 0;
+/* background: url("c3.jpg");  */
+ background-image: url("stand.jpg");
+ /* background-image: linear-gradient( rgba(170, 32, 32, 0.76), rgba(167, 161, 161, 0.979));  */
+background-size: cover;
+/* background-repeat: no-repeat; */
+font-family: sans-serif;
+}
+.loginbox
+{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+width: 350px;	
+height: 420px;
+padding: 80px 40px;
+box-sizing: border-box;
+border-radius: 20px;
+background: rgba(0,0,0,0.5);
+}
+h2
+{
+margin:0;
+padding: 0 0 20px;
+color: #1E90FF;
+text-align: center;
+}
+.loginbox p
+{
+padding: 0;
+margin: 0;
+font-weight: bold;
+color: #FFF;
+}
+.loginbox input
+{
+width: 100%;
+margin-bottom:20px; 	
+}
+.loginbox input[type="text"],.loginbox input[type="Password"]
+{
+border: none;
+border-bottom: 1px solid #FFF;
+background: transparent;
+outline: none;
+height: 40px;
+color: #FFF;
+font-size: 16px;
+
+
+}
+.sin
+{
+border: none;
+outline: none;
+height: 40px;
+color: #fff;
+font-size: 30px;
+background: rgb(255,38,126);
+cursor: pointer;
+border-radius:25px;
+text-decoration:none;
+padding: 15px 23px;
+} 
+.sin:hover
+{
+background: #efed40;
+color: #262626;	
+}
+.loginbox a
+{
+color: #fff;
+font-size: 14px;
+font-weight: bold;	
+}
+::placeholder
+{
+color: rgba(255,255,255,0.5);	
+}
+.user
+{
+width: 100px;
+height: 100px;
+overflow: hidden;
+position: absolute;	
+top: calc(-100px/2);
+left: calc(50% - 50px);
+}
+.my
+{
+max-width: 8%;
+max-height: 70%;
+float:left;
+}
+body{margin:0;}
+.header {
+  padding: 1px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 20px;
+}
+
+.topnav{
+	background-color: #333;
+	overflow: hidden;
+}
+.topnav a {
+	float:left;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	padding:  20px 20px;
+	font-size: 17px;
+}
+.topnav a.active {
+  background-color: #4CAF50;
+  color: black;
+  
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  
+}
+
+.container {
+  position: relative;
+  text-align: left;
+  color: white;
+width:100%;
+}
+
+
+
+.top-left {
+  position: absolute;
+  top: 100px;
+  left: 40px;
+   
+}
+.heading {
+	text-align:left;
+	font-size:55px;
+	color:#00cc99;
+	text-shadow:2px 2px  #444; 
+}
+.subh {
+	text-align:left;
+	font-size:25px;
+	color:black;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.text-block{
+	position:relative;
+	text-align:center;
+	background-color:#ccffe6;
+	padding: 50px;
+	
+}
+
+.bold{
+	font-weight:bold;
+	color:#009999;
+	font-size:25px;
+}
+
+
+
+</style>
+</head> 
+<body>
+<div class="topnav">
+<a href="home.html">Home</a>
+<a href="services.htm">Services</a>
+<a href="about.htm">About us</a>
+<a href="applypage.html">Sign Up</a>
+
+</div>
+<img src="img/clogo.jpg" class="my">	
+<div class="loginbox">
+<img src="img/3.png" class="user">	
+<h2>Log in here</h2>
+<form action="homepage.html">
+<p>User Name</p>
+<input type="text" name="email" id="username"
+placeholder="Enter User name" required>
+<p>Password</p>
+<input type="Password" name="password" id="password" placeholder="Enter Password" required>
+<center><a href="home.html"  class="sin "id="submit" onclick="validate()">Sign in</a></center><br>
+<a href="contact.html">Forget Password</a>	
+</form>
+</div>
+
+
+<script src="js/login.js"></script>
+	
+</body>
+
+</html>
