@@ -1,0 +1,190 @@
+<html>
+    <head>
+        <style>
+             body{
+                margin: 0;
+            } 
+            
+            .navbar{
+                display: flex;
+                flex-wrap: wrap;
+                /* background-color: blue; */
+                background-color: rgb(6, 141, 96);
+
+            }
+            .navbar a{
+                color: white;
+                padding: 20px;
+                text-decoration: none;
+                transition: 0.5s;
+            }
+            .navbar a:hover{
+                background-color: whitesmoke;
+                color: darkblue;
+            }
+            .row{
+                display: flex;
+            }
+            .side{
+                flex: 20%;
+                /* background-image: url('l.jpg'); */
+                /* background-image: linear-gradient( rgba(170, 32, 32, 0.76), rgba(167, 161, 161, 0.979));  */
+                background-color:rgb(111, 156, 43);
+                background-size: cover;
+                padding: 20px;
+                color: white;
+            }
+            .main{
+                flex: 80%;
+                background-image: url('p2.png');
+                background-size: cover;
+                padding: 20px;
+                /* background-image: linear-gradient( rgba(170, 32, 32, 0.76), rgba(167, 161, 161, 0.979)); */
+                background: url("applyback1.jpg"); 
+
+            }
+            .btn:hover{
+   transform: scale(1.1);
+	  }
+
+.btn-1:hover{
+   transform: scale(1.1);
+	
+    }
+    .container{
+                display: flex;
+                background-color:rgb(111, 156, 43);
+                padding: 10px;
+                flex-direction: row;
+                flex-wrap: wrap;
+
+            }
+            .child{
+                margin: 10px;
+                background-color: lightgreen;
+                font-size: 30px;
+                padding: 30px;
+                
+
+            }
+
+        </style>
+    </head>
+    <!-- <script src="js/signup.js"></script>	 -->
+    <script type="text/javascript">
+
+        function jsvalidation()
+        {
+        if(document.myForm.name.value =="")
+        {
+        alert("Name cannot be left blank");
+        document.myForm.name.focus();
+        return false;
+        }
+        if(document.myForm.email.value =="")
+        {
+        alert("Email cannot be left blank");
+        document.myForm.email.focus();
+        return false;
+        }
+        if(document.myForm.number.value =="")
+        {
+        alert("Phone number cannot be left blank");
+        document.myForm.number.focus();
+        return false;
+        }
+        if(document.myForm.number.value =="")
+        {
+        alert("Mobile number cannot be left blank");
+        document.myForm.number.focus();
+        return false;
+        }
+    
+        }
+
+        </script>
+    <body>
+        <div class="navbar">
+            <a href="home.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.htm">About us</a>
+            <a href="login.htm">Log In</a>
+           
+        </div>
+        <div class="row">
+            <div class="side">
+                <p> 
+                    Cricket is a bat-and-ball game played between two teams of eleven players on a field at the centre of which is a 22-yard (20-metre) pitch with a wicket at each end, each comprising two bails balanced on three stumps. The batting side scores runs by striking the ball bowled at the wicket with the bat (and running between the wickets), while the bowling and fielding side tries to prevent this (by preventing the ball from leaving the field, and getting the ball to either wicket) and dismiss each batter (so they are "out"). Means of dismissal include being bowled, when the ball hits the stumps and dislodges the bails, and by the fielding side either catching the ball after it is hit by the bat, but before it hits the ground, or hitting a wicket with the ball before a batter can cross the crease in front of the wicket. When ten batters have been dismissed, the innings ends and the teams swap roles. The game is adjudicated by two umpires, aided by a third umpire and match referee in international matches. They communicate with two off-field scorers who record the match's statistical information.
+                </p>
+                <img src="stand2.jpg" height="200" width="200">
+                <p>
+                    Forms of cricket range from Twenty20, with each team batting for a single innings of 20 overs, to Test matches played over five days. Traditionally cricketers play in all-white kit, but in limited overs cricket they wear club or team colours. In addition to the basic kit, some players wear protective gear to prevent injury caused by the ball, which is a hard, solid spheroid made of compressed leather with a slightly raised sewn seam enclosing a cork core layered with tightly wound string.
+                </p>
+            </div>
+            <div class="main">
+               
+                     <h1 style="color:black;"><u>Apply Form</u></h1> 
+                     <form class="container" name="myForm" onsubmit= "return(jsvalidation())">
+                        <form class="forms" name="RegForm" action="done.htm" onsubmit="return sign_up()" >
+                        <table cellpadding="10" cellspacing="10">
+                        
+                     <tr>
+                        <td><label>Full Name</label></td>
+                        <td><input name="name" type="text"></td>
+                        </tr>
+                        
+                        <tr>
+                          <td>
+                            <label>Email</label>
+                          </td>
+                          <td><input name="email" type="email"></td>
+                        </tr>
+                        
+                        <tr>
+                        <td><label>Phone Number</label></td>
+                        <td><input name="number" type="tel" maxlength="10"></td>
+                        </tr>
+                        
+                        
+                        <tr>
+                        <td><label>Mobile Number</label></td>
+                        <td><input name="number" type="tel" maxlength="10" ></td>
+                        </tr>
+                        
+                        
+                        <tr>
+                          <td><label>Street Address</label></td>
+                          <td><textarea name="addr" rows="3" cols="50"></textarea></td>
+                        </tr>
+                        
+                        
+                          <td><label>Additional info</label></td>
+                          <td><textarea name="addr" rows="8" cols="50"></textarea></td>
+                        </tr>
+                        
+                        <tr><td></td>
+                            <td> <button class="btn">CONFIRM BOOKING</button>
+                             <button class="btn-1">CANCEL</button>
+                        </tr>
+                            
+                            
+                        </table>
+                        </form>
+                        
+                <div class="container">
+            <div class="child">
+                <img src="c1.jpg" height="200" width="200">
+            </div>
+            <div class="child"><img src="c2.jpg" height="200" width="200"></div>
+            <div class="child"><img src="c3.jpg" height="200" width="200"></div>
+            <div class="child"><img src="c4.jpg" height="200" width="200"></div>
+            
+
+
+
+        </div>
+            </div>
+        </div>
+        <script src="js/signup.js"></script>
+    </body>
+    </html>
