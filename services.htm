@@ -1,0 +1,177 @@
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" href="css/home.css"> -->
+<style>
+   .nav
+{
+width: 350px;
+height:auto;
+background-color:none; 	
+position: absolute;
+top: 20%;
+left: 0;
+}
+.nav a
+{
+text-decoration: none;	
+font-size: 20px;
+font-family: impact;
+font-weight: bold;
+height:40px;
+margin: 5px 0;
+ /* float: center;   */
+display: inline-block;
+color:white; 
+line-height: 50px;
+text-align: center;
+transition: 300ms;
+}
+a.active,.nav a:hover
+{
+background-color: white;
+color:black;
+width:100%;	
+}
+ .tab1
+{
+width: 50%;
+
+}
+.tab2
+{
+width: 50%;	
+}
+.tab3
+{
+width:50%;	
+}
+.tab4
+{
+width:50%;	
+}
+
+h1
+{
+	font-size:50px;
+	color:green;
+	font-family:impact;
+	margin-left: 10px 80px;
+
+}
+.article
+{
+font-weight: bold;
+color: blue;	
+}
+ul li
+{
+display: inline;	
+}
+.dignity
+{
+font-family: impact;
+color: red;	
+}
+.awards
+{
+font-family: impact;
+color:black;	
+}
+.oppor
+{
+font-family: impact;
+color: green;	
+}
+.powered
+{
+font-weight: bold;
+font-family: cursive;
+color: orange;	
+}
+.justify
+{
+font-family: cursive;	
+}
+.section
+{
+display: inline;	
+}
+.column {
+  float: left;
+  width: 31%;
+  padding: 10px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+</style>
+<body>
+  <h1>Unity Cricket Team</h1>
+<nav class="nav">
+  <a href="about.htm" class="tab1">About us</b></a>
+  <a href="applypage.html" class="tab2">Sign Up</b></a>
+  <a href="contact.html" class="tab3">Contact</b></a>
+  <a href="login.htm" class="tab4">Sign in</b></a>
+  <!-- <a href="about.htm" class="tab1"><b style="color:rgb(143, 6, 6);">About us</b></a>
+  <a href="applypage.html" class="tab2"><b style="color:rgb(67, 5, 124);">Sign Up</b></a>
+  <a href="contact.html" class="tab3"><b style="color:rgb(9, 131, 9);">Contact</b></a>
+  <a href="login.htm" class="tab4"><b style="color:rgb(2, 128, 128);">Sign in</b></a> -->
+</nav>
+<section>
+ <img class="mySlides" src="img/indian1.jpg" style="width:100%">
+  <img class="mySlides" src="img/indian2.jpg"  style="width:100%">
+  <img class="mySlides" src="img/indian3.jpg"  style="width:100%">
+</section>
+<section class="content">
+<center><h2 class="topic" style="font-size: 40px;color: orange;"><u>Insights of Unity Cricket Team</u></h2></center>
+  <p class="article"><i><h2> Fans can make you famous.
+    A contract can make you rich.
+    The press can make you a superstar.
+    But only love can make you a player..</h2></i></p>
+  <p class="justify">I have created a sports team website,where you can admit yourself in our cricket camp and where you can excel your cricketing talent of as well.
+    You can do many of the things here related to team  like as: Features of the team, Achievements of the team and many more.
+</p>
+</section>
+<div class="row">
+  <div class="column">
+    <p style="color: purple;font-size: 30px;"><b>Features of the team</b></p>
+    <p style="color: purple;font-size: 30px;"><b>1-Dignity</b></p>
+    <p><b>The sports is the only field where you feel equal and find equal opportunity. when you are a part of this team you literally feel the taste of dignity for sure.</b></p>
+    <img src="img/indianteam.jpg" alt="dignity" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="img/awards.jpg" alt="awards" style="width:100%">
+    <p style="color: purple;font-size: 30px;"><b>Awards</b></p>
+<p><b>Our Team is the best among all other teams since 2018. We played number of tournaments and give our best sort to win the games which uniquely defines us. We as a team won many awards in state level tournaments.</b></p>
+  </div>
+  <div class="column">
+    <p style="color: purple;font-size: 30px;"><b>Opportuniies</b></p>
+    <p><b>There are many players of our team who plays for Indian cricket team and in ipl as well. So we trained the players according to their will and support them through last.We provided equal opportunities for everyone.</b></p>
+    <img src="img/opportuniies.jpg" alt="oppor" style="width:100%">
+  </div>
+</div>
+<footer>
+<p class="Powered"><hr>
+<b>Powered by<a href="#" target="_blank">Jayant Kumar</a>
+</b>  </hr></p>
+</footer>
+<script>
+var myIndex = 0;
+carousel();
+function carousel() {
+ var i;
+ var x = document.getElementsByClassName("mySlides");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none";
+}
+myIndex++;
+if (myIndex > x.length) {myIndex = 1}
+x[myIndex-1].style.display = "block";
+setTimeout(carousel, 3000);
+}</script>
+</body>
+</html>
